@@ -1,0 +1,30 @@
+{
+  "name": "lloro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "version": "rimraf version && webpack --config webpack/version.dev.nomini.nohash.js",
+    "entrega": "rimraf entrega && webpack --config webpack/entrega.prod.mini.nohash.js",
+    "publicacion": "rimraf publicacion && webpack --config webpack/publicacion.prod.mini.hash.js"
+  }, 
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5"
+  },
+  "devDependencies": {
+    "css-loader": "^2.1.1",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "rimraf": "^2.6.3",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1"
+  }
+}
